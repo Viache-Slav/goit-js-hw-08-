@@ -2,6 +2,7 @@
 import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import { toggleDarkMode } from "./dark-mode.js";
 // Change code below this line
 
 const galleryEll = document.querySelector('.gallery');
