@@ -14,3 +14,8 @@ player
 .catch(function (error) {
     console.error(error)
 });
+
+const body = document.querySelector("body"); 
+const toggle = document.querySelector(".toggle");
+
+toggleDarkMode(body, toggle);
