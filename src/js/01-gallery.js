@@ -2,10 +2,12 @@
 import { galleryItems } from './gallery-items';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import { toggleDarkMode } from "./dark-mode.js";
 // Change code below this line
 
 const galleryEll = document.querySelector('.gallery');
 const listEl = [];
+const shadow = toggleDarkMode;
 
 galleryItems.forEach(element => {
     const galleryLink = document.createElement('a');
@@ -28,9 +30,4 @@ new SimpleLightbox('.gallery a', {
     captionDelay: 250,
 });
 
-import { toggleDarkMode } from "./dark-mode.js";
-
-const body = document.querySelector("body"); 
-const toggle = document.querySelector(".toggle");
-
-toggleDarkMode(body, toggle);
+console.log(shadow);
